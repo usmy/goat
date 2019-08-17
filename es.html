@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Goat-企業リスト</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/es.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Sans" rel="stylesheet">
+    <!-- <script src="https://unpkg.com/vue"></script>
+    <script type="text/javascript" src="index.js"></script> -->
+  </head>
+  <body>
+    <div id="app">
+      <div class="screen">
+        <nav>
+          <ul>
+            <a href="index.html">
+              <li>
+                <img src="./assets/home.svg" alt="">
+                <p>企業リスト</p>
+              </li>
+            </a>
+
+            <a href="es.html">
+              <li>
+                <img src="./assets/file.svg" alt="">
+                <p>ESリスト</p>
+              </li>
+            </a>
+
+            <a href="#">
+              <li>
+                <img src="./assets/user.svg" alt="">
+                <p>面接</p>
+              </li>
+            </a>
+
+            <a href="#">
+              <li>
+                <img src="./assets/calendar.svg" alt="">
+                <p>スケジュール</p>
+              </li>
+            </a>
+          </ul>
+        </nav>
+
+        <div class="main">
+          <div class="search">
+            <h2>企業リスト</h2>
+            <div class="filter">
+              <div class="item">
+                <input type="text" name="" value="" placeholder="企業名">
+              </div>
+
+              <div class="item">
+                <label for="">業種</label>
+                <select class="" name="" v-model='industry'>
+                  <option>全て</option>
+                  <option>IT</option>
+                  <option>広告</option>
+                </select>
+              </div>
+              <div class="item">
+                <label for="">選考状況</label>
+                <select class="" name="" v-model='status'>
+                  <option>全て</option>
+                  <option>希望</option>
+                  <option>インターン</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="add">
+              <p>企業追加</p>
+            </div>
+          </div>
+
+          <div class="">
+            <!-- <div class="header">
+                <p class="name">企業名</p>
+                <p class="industry">業種</p>
+                <p class="status">選考状況</p>
+            </div> -->
+            <ul class="list">
+              <!-- <li class="item" v-for="info in filtered">
+              </li> -->
+              <div class="" v-for="info in filtered">
+                <div class="item" v-for = "es in info.es" v-bind:class='{active:isActive}' v-on:click='isActive=!isActive'>
+                  <div class="item-content">
+                    <img src="./assets/arrow.svg" alt="">
+                    <p class="question">{{es.question}}</p>
+                    <p class="name">{{info.name}}</p>
+                  </div>
+                  <div class="texts">
+                    <div class="text">
+                      <p class="category">カテゴリー：{{es.category}}</p>
+                      <p class="answer-len">{{es.answer.length}}文字</p>
+                    </div>
+                    <p class="answer">{{es.answer}}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="un_result" v-if="filtered==0">
+                <div class="">
+                  <img src="./assets/search.svg" alt="">
+                  <p>ヒットする企業がありません</p>
+                </div>
+              </div>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue"></script>
+  <script type="text/javascript" src="index.js"></script>
+</html>

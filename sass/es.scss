@@ -1,0 +1,114 @@
+@import "_color";
+.header {
+  max-width: 1000px;
+  margin: 1rem auto 0.5rem;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: solid 1px $black04;
+
+  .name {
+    min-width: 240px;
+    font-size: 14px;
+  }
+  .industry {
+    min-width: 120px;
+    font-size: 14px;
+  }
+  .status {
+    color: $black03;
+    min-width: 120px;
+    font-size: 14px;
+  }
+}
+.list {
+  max-width: 1034px;
+  margin: 0.5rem auto;
+  .item {
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: solid 1px $black04;
+    background-color: #fff;
+    .item-content {
+      transition: 0.3s;
+      align-items: center;
+      display: flex;
+      padding-bottom: 0;
+      img {
+        transform: rotate(0deg);
+        transition: 0.3s;
+      }
+      .question {
+        min-width: 280px;
+      }
+      .name {
+        color: $black03;
+      }
+    }
+    .texts {
+      display: none;
+      .answer {
+      }
+      .category {
+        font-size: 14px;
+        color: $black03;
+      }
+    }
+
+  }
+
+  .item.active {
+    .item-content {
+      transition: 0.3s;
+      padding-bottom: 1rem;
+      img {
+        transition: 0.3s;
+        transform: rotate(90deg);
+      }
+    }
+    .texts {
+      display: block;
+      border-top: solid 1px $black04;
+      padding-top: 1rem;
+      .text {
+        display: flex;
+        max-width: 600px;
+        .category {
+          font-size: 14px;
+          color: $black03;
+          margin-bottom: 1rem;
+        }
+        .answer-len {
+          font-size: 14px;
+          color: $black03;
+          margin-bottom: 1rem;
+          margin-left: auto;
+        }
+      }
+      .answer {
+        font-size: 14px;
+        white-space: pre-wrap;
+        line-height: 1.4;
+      }
+    }
+  }
+  .un_result {
+    margin: 0 auto;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 2rem;
+    }
+    img {
+      width: 300px;;
+    }
+  }
+}

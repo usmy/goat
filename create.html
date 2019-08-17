@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Goat</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="ja" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>Goat-企業リスト</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Sans" rel="stylesheet">
+        <!-- <script src="https://unpkg.com/vue"></script>
+        <script type="text/javascript" src="index.js"></script> -->
+      </head>
+      <body>
+        <div id="app">
+          <div class="screen">
+            <nav>
+              <ul>
+                <a href="#" v-on:click='create'>
+                  <li>
+                    <img src="./assets/home.svg" alt="">
+                    <p>企業リスト</p>
+                  </li>
+                </a>
+
+                <a href="#">
+                  <li>
+                    <img src="./assets/file.svg" alt="">
+                    <p>ESリスト</p>
+                  </li>
+                </a>
+
+                <a href="#">
+                  <li>
+                    <img src="./assets/user.svg" alt="">
+                    <p>面接</p>
+                  </li>
+                </a>
+
+                <a href="#">
+                  <li>
+                    <img src="./assets/calendar.svg" alt="">
+                    <p>スケジュール</p>
+                  </li>
+                </a>
+              </ul>
+            </nav>
+
+            <div class="main">
+
+
+            </div>
+          </div>
+        </div>
+      </body>
+      <script src="https://unpkg.com/vue"></script>
+      <script type="text/javascript">
+      new Vue({
+        el: '#app',
+        data () {
+          return {
+            keywords:'',
+            industry:'全て',
+            status:'全て',
+            allinfo: null,
+          }
+        },
+        methods: {
+          create: function () {
+            console.log(this.allinfo)
+          }
+        },
+        mounted () {
+          fetch(
+            'https://script.google.com/macros/s/AKfycbx8aLf_-zYHUSnH0D9GTe9T6tZ8xZWYWaOCsMKGr_pgdUZERg/exec',
+          )
+          .then(res => res.json())
+          .then(
+            result => {
+              this.allinfo = result
+            },
+            error => {
+
+            },
+          );
+        },
+        computed: {
+          filtered: function() {
+          }
+        }
+      })
+
+      </script>
+    </html>
+
+  </body>
+</html>

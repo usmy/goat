@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1",
+    "name": "GMOペパボ",
+    "industry": "IT",
+    "memo": "",
+    "status": "インターン",
+    "url": "https://pepabo.com/",
+  },
+  {
+    "id": "2",
+    "name": "株式会社WHITE",
+    "industry": "IT",
+    "memo": "",
+    "status": "インターン",
+    "url": "https://255255255.com/",
+    "plans":[
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      },
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "株式会社GoodPtch",
+    "industry": "IT",
+    "memo": "",
+    "status": "インターン",
+    "url": "https://goodpatch.com/ja/",
+    "plans":[
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      },
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "博報堂プロダクツ",
+    "industry": "広告",
+    "memo": "",
+    "status": "希望",
+    "url": "",
+    "plans":[
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      },
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "LINE",
+    "industry": "IT",
+    "memo": "",
+    "status": "希望",
+    "url": "",
+    "plans":[
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      },
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "博報堂アイスタジオ",
+    "industry": "広告",
+    "memo": "",
+    "status": "希望",
+    "url": "",
+    "plans":[
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      },
+      {
+        "plan":"履歴書提出",
+        "date":"2019/08/30"
+      }
+    ]
+  }
+]

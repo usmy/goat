@@ -1,0 +1,95 @@
+@import "_color";
+body {
+  background-color: $background_color;
+  padding-left: 104px;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+select,input,textarea {
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+}
+
+.screen {
+  padding: 0 1rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  border-right: solid 1px $black04;
+  background-color: #fff;
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem;
+    border-top: solid 1px $black04;
+    margin-top: 3rem;
+    a {
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+      li {
+        text-align: center;
+        color: $main_color01;
+        img {
+          background-color: #fff;
+          box-shadow: $shadow01;
+          border-radius: 4px;
+          width: 25px;
+          height: 25px;
+          padding: 1rem;
+          stroke:$main_color01;
+          border: $main_color02;
+        }
+        p {
+          margin-top: 0.5rem;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.search {
+  max-width: 1000px;
+  margin: 1rem auto;
+  padding:0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: solid 1px $black04;
+  border-radius: 4px;
+  h2 {
+    font-size: 18px;
+    margin-right: 2rem;
+  }
+  .item {
+    margin-right: 1rem;
+  }
+  .filter {
+    display: flex;
+    input {
+      border: solid 1px $black04;
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+    select {
+      border: solid 1px $black04;
+      padding: 0.5rem;
+      border-radius: 4px;
+    }
+    label {
+      margin-right: 0.5rem;
+      color: $black03;
+      font-size: 14px;
+    }
+  }
+  .add {
+    margin-left: auto;
+    background-color: $main_color01;
+    color: #fff;
+    border-radius: 4px;
+    padding: 0.8rem 1.2rem;
+  }
+}
